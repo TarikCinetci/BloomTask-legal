@@ -20,3 +20,12 @@ ul{padding-left:20px}
 footer{text-align:center;margin-top:28px;font-size:14px;color:var(--soft)}
 .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
 .cards a{display:block;background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:18px;text-decoration:none;color:var(--ink);font-weight:700;text-align:center}
+.pals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 4px}
+@media (max-width:520px){.pals{grid-template-columns:repeat(2,1fr)}}
+.pal{position:relative;margin:0;background:var(--bg);border:1.5px solid var(--line);border-radius:20px;padding:16px 8px 12px;text-align:center}
+.pal img{width:100%;max-width:128px;height:auto}
+.pal figcaption{display:flex;flex-direction:column;font-size:15px}
+.pal figcaption span{color:var(--soft);font-size:13px}
+.badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px;color:#fff;white-space:nowrap}
+.badge.free{background:#5FAF6E}
+.badge.plus{background:#D9607E}
