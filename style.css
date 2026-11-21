@@ -1,0 +1,22 @@
+:root{--bg:#FFF8EF;--card:#FFFFFF;--ink:#5B3F33;--soft:#8A6F62;--pink:#F59BB0;--peach:#FFD9B8;--line:#F1E2D3}
+@media (prefers-color-scheme:dark){:root{--bg:#2A201C;--card:#352925;--ink:#FBEDE2;--soft:#D8C2B4;--line:#4A3A33}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 ui-rounded,"SF Pro Rounded",-apple-system,"Hiragino Maru Gothic ProN","Apple SD Gothic Neo","PingFang SC",system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+header{text-align:center;margin-bottom:20px}
+header img.icon{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(245,155,176,.35)}
+header img.mark{display:block;width:240px;max-width:70%;margin:12px auto 0}
+nav.langs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:20px 0}
+nav.langs a{padding:6px 14px;border-radius:999px;background:var(--card);border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+nav.langs a.on{background:var(--pink);border-color:var(--pink);color:#fff}
+section.lang{display:none;background:var(--card);border:1.5px solid var(--line);border-radius:24px;padding:24px 22px}
+section.lang.on{display:block}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:18px;margin:22px 0 6px}
+p,li{color:var(--ink)}
+.muted{color:var(--soft);font-size:14px}
+a{color:#D9607E}
+ul{padding-left:20px}
+footer{text-align:center;margin-top:28px;font-size:14px;color:var(--soft)}
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
+.cards a{display:block;background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:18px;text-decoration:none;color:var(--ink);font-weight:700;text-align:center}
